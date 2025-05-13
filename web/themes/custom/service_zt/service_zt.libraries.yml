@@ -1,0 +1,19 @@
+global-styling:
+  css:
+    theme:
+      assets/css/style.css: {}
+      assets/css/custom.css: {}
+      assets/css/mobile.css: {}
+      assets/css/manage-profile.css: {}
+      # assets/css/soft-ui-dashboard.css: {}
+      https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css: {}
+  js:
+    assets/js/custom.js: {}
+    https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js: {}
+    
+fontawesome:
+  version: 1.x
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css: {}
+

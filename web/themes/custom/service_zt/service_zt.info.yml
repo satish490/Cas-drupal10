@@ -1,0 +1,25 @@
+name: service_zt
+type: theme
+description: 'service_zt subtheme based on Bootstrap 5 theme.'
+core_version_requirement: '^10.1 || ^11.0'
+'base theme': bootstrap5
+libraries:
+  - service_zt/global-styling
+ckeditor_stylesheets:
+  - assets/css/style.css
+ckeditor5-stylesheets:
+  - assets/css/ck5style.css
+regions:
+  header: Header
+  nav_branding: 'Navigation branding region'
+  nav_main: 'Main navigation region'
+  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
+  breadcrumb: Breadcrumbs
+  header_left: Header Left Side
+  header_main: Header Right Side
+  content: 'Main content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer
+libraries-override:
+  bootstrap5/global-styling: false

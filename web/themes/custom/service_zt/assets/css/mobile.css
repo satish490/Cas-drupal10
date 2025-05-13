@@ -1,0 +1,266 @@
+  
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .dashboard-cards {
+        flex-direction: column !important;
+        align-items: center; 
+        background-color: red;
+    }
+
+    .dashboard-card {
+        flex: 1 1 100%;
+        width: 90%;
+    }
+
+    .section-main {
+        order: 2 !important;
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .section-first {
+        order: 1 !important;
+        position: unset !important;
+        height: unset !important;
+        width: 100% !important;
+    }
+    div#block-service-zt-content {
+        padding: unset !important;
+    }
+    .dashboard-cardnew .row {
+        flex-direction: column; 
+        align-items: center;
+    }
+    #form-membership-wrapper {
+        padding: unset !important;
+    }
+
+    .dashboard-cardnew .col-sm-4 {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+    .whole-customer {
+        flex-direction: column; 
+    }
+    .dashboard-cardnew .col-sm-4.mb-4 {
+        margin-top: unset !important;
+   
+    }
+    .active-customer,
+    .exp-customer {
+        width: 100%; 
+    }
+    .membership-details-sticky {
+        padding: 20px;
+        margin-left: unset !important;
+    }
+
+    /* Payment Collect Form Css */
+
+    .flag-mobileno-container {
+        flex-direction: unset !important;
+    
+    }
+    .payment-collect-form #edit-button-wrapper {
+        position: unset !important;
+
+    }
+    form#payment-collect-form {
+        width: 100% !important;
+        display: flex;
+        grid-template-columns: unset !important;
+        padding: 10px 16px;
+        gap: 10px !important;
+    }
+    #form-membership-wrapper {
+        display: unset !important; 
+        margin-top: unset !important;
+    }
+    div#membership-details-wrapper {
+        width: 100% !important;
+    }
+    .custom-currency-container {
+        margin-top: unset !important;
+
+    }
+
+    form#expense-collect-form, #membership-edit-form {
+        display: grid !important;
+        grid-template-columns: unset !important;
+        gap: unset !important;
+        border-radius: 16px;
+        margin-top: 40px;
+    }
+
+    .expense-collect-form div#edit-button-wrapper, .expense-collect-edit-form #edit-button-wrapper {
+        top: 25px;
+    }
+
+    #form-membership-wrapper {
+        padding: 15px;
+      }
+    
+      .flag-mobileno-container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    
+      #flag-display img {
+        width: 40px;
+        height: 40px;
+      }
+    
+      #country-flag-select {
+        width: 100%;
+      }
+      .membership-details th, .membership-details td {
+        font-size: 14px;
+      }
+    
+      .massage-option-label {
+        font-size: 14px;
+      }
+      .view-apps-section .view-content {
+        flex-direction: column; 
+        align-items: center;
+    }
+  
+    .view-apps-section .views-row {
+        width: 90%; 
+    }
+    form#webform-submission-help-support-add-form {
+        grid-template-columns: unset !important;
+
+    }
+    .pending-customer {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .chart {
+        width: 100% !important;
+
+    }
+    .purchased-apps-container .cards .card {
+        max-width: unset !important;
+    }
+
+    .active-customer table.table.payment-dashboard.table-striped.table-bordered {
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .expire-right {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+   .expiry-dashboard.table-striped.table-bordered {
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+
+    div#payment-table-wrapper, div#expense-collect-wrapper, #membership-table-wrapper {
+        overflow-x: auto;
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap;
+    }
+    div#edit-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+    }
+    input#search-text {
+        width: 179px;
+  
+    }
+    .card {
+        width: 100% !important;
+        max-width: unset !important;
+    }
+    .new-customer a.btn.btn-primary {
+        margin-bottom: 10px;
+    }
+    .main-section {
+        margin-right:unset !important;
+  
+    }
+    .purchased-apps-container a.btn.btn-primary {
+
+        width: 100% !important;
+    
+    }
+    .details-wrapper.card-body {
+        width: 193%;
+    }
+    .section-main {
+        margin-left: unset !important;
+
+    }
+    form#order-booking-form, #order-booking-edit-form {
+        width: 100%;
+    }
+    div#edit-datetime-wrapper {
+        display: unset !important;
+    }
+    #edit-datetime-wrapper .col-md-4 {
+        margin-bottom: 10px;
+    }
+    #edit-filter-button .details-wrapper.card-body {
+        right: 0;
+    }
+    .order-booking-form label.option {
+        padding: 10px 13px;
+
+    }
+    .membership-form-tier #edit-member-amount {
+        width: 100%;
+      }
+      .membership-form-tier #edit-massage-type-fieldset-massage-type-0-name {
+        width: 100%;
+  
+      }
+      table#edit-records-table {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block;
+    }
+    .col-md-4.col-sm-6.col-12 {
+        margin-bottom: 10px;
+    }
+
+    form#expense-collect-form, #membership-edit-form {
+        background: #fff;
+        padding: 20px;
+        width: 100%;
+        margin-left: unset !important;
+        margin-top: unset !important;
+    }
+
+    div#edit-left-section {
+        width: 100% !important;
+        padding: 20px !important;
+        border-radius: 8px;
+    }
+    div#edit-right-section {
+        width: 100% !important;
+         margin-left: unset !important;
+         margin-top: 10px;
+         padding: 20px;;
+    }
+    .membership-form {
+        padding: 20px;
+        margin-left: unset !important;
+    }
+    .section h5 {
+        margin-bottom: 10px;
+    }
+    .emergency-section {
+        margin-bottom: 20px;
+    }
+    div#form-payment-wrapper {
+        display: unset !important;
+        gap: unset !important ;
+    }
+
+  }
+  

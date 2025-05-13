@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * Theme file for service_zt.
+ */
+
+use Drupal\file\Entity\File;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_HOOK() for views-view templates.
+ */
+function service_zt_preprocess_views_view(array &$variables) {
+  $view_id = $variables['view']->id();
+
+  if ($view_id === 'user_admin_people') {
+    $account = \Drupal::currentUser();
+
+    if ($account->isAuthenticated()) {
+      $user = \Drupal\user\Entity\User::load($account->id());
+
+      $variables['user_mail'] = $user->getEmail();
+      $variables['user_full_name'] = $user->get('field_full_name')->value;
+      $variables['user_id'] = $user->id();
+
+      if ($user->hasField('user_picture') && !$user->get('user_picture')->isEmpty()) {
+        $file = $user->get('user_picture')->entity;
+
+        if ($file instanceof File) {
+          $variables['user_picture'] = \Drupal::service('file_url_generator')
+            ->generateAbsoluteString($file->getFileUri());
+        }
+      }
+    }
+  }
+}
+
+
+  

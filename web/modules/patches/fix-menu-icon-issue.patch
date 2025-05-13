@@ -1,0 +1,48 @@
+diff --git a/simple_menu_icons.module b/simple_menu_icons.module
+index aa928f3..e019d3e 100755
+--- a/simple_menu_icons.module
++++ b/simple_menu_icons.module
+@@ -162,8 +162,7 @@ function simple_menu_icons_css_generate() {
+   }
+ 
+   // Either way, we should flush CSS cache so that aggregated CSS gets rebuilt.
+-  \Drupal::service('asset.css.collection_optimizer')->deleteAll();
+-  _drupal_flush_css_js();
++  \Drupal::service('asset.query_string')->reset();
+ }
+ 
+ /**
+@@ -201,6 +200,12 @@ function simple_menu_icons_css_alter(&$css, AttachedAssetsInterface $assets) {
+           'IE' => TRUE,
+           '!IE' => TRUE,
+         ],
++        'version' => -1,
++        'license' => [
++          'name' => 'GNU-GPL-2.0-or-later',
++          'url' => 'https://www.drupal.org/licensing/faq',
++          'gpl-compatible' => TRUE,
++      ],
+       ];
+     }
+   }
+diff --git a/templates/simple-menu-icons-css-item.html.twig b/templates/simple-menu-icons-css-item.html.twig
+index d9f2955..025fdb8 100644
+--- a/templates/simple-menu-icons-css-item.html.twig
++++ b/templates/simple-menu-icons-css-item.html.twig
+@@ -10,11 +10,12 @@
+ 
+ {% for icon in icons %}
+     a.menu-icon-{{ icon.mlid }},
+-    ul.links li.menu-icon-{{ icon.mlid }} a,
+-    ul.menu li.menu-icon-{{ icon.mlid }} a {
++    ul.links li.menu-icon-{{ icon.mlid }} > a,
++    ul.menu li.menu-icon-{{ icon.mlid }} > a,
++    ul.nav li.menu-icon-{{ icon.mlid }} > a {
+         background-image: url({{ icon.path }});
+         padding-left:{{ icon.width }}px;
+         background-repeat: no-repeat;
+         background-position: left center;
+     }
+-{% endfor %}
++{% endfor %}
+\ No newline at end of file
